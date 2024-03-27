@@ -10,10 +10,12 @@ clientes.
 valor do bolo e valor do sinal.
   O sistema deve exigir que o valor do sinal seja de, no mínimo, 50%. O preço do bolo é calculado
 da seguinte forma:
+
 - Área do bolo = altura * largura;
 - Custo_ingredientes = área * R$ 51,40;
 - Custo_recheio = no de camadas;
 - Valor_do_bolo = Custo_ingredientes + Custo_recheio.
+  
   Para calcular o prazo de entrega, considera-se que Maria só consegue produzir 4 bolos por
 dia.
   Maria gostaria que o sistema controlasse os pedidos, calculasse o preço final dos bolos e o
