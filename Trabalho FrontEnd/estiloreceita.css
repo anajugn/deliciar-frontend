@@ -1,0 +1,382 @@
+/* Estilo geral do corpo da página */
+body{
+    background:white;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* Barra de navegação superior */
+.cor-bd{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9EEE7;
+    padding: 30px;
+}
+/* Campo de busca */
+#divBusca{
+    background-color:rgba(255, 255, 255, 0.60);
+    border:solid 1px;
+    border-radius: 30px;
+    border-color: #FF5E00;
+    width: 550px;
+    height: 42px;
+    float:inline-start;
+    flex-shrink: 10;
+}
+  /* Estilo do texto no campo de busca */
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width: 500px;
+}
+/* Botão de busca */
+#busca{
+    float:inline-start;
+    padding: 10px;
+}
+/* Cabeçalho da página */
+.header-content {
+    height: 60px;
+    flex-shrink: 0;
+    background-color: #F2EBE6;
+    padding: 1rem 0;
+}
+/* Menu de navegação */
+#menu{
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    font-size: 20px;
+}
+ul#menu>li{
+    text-decoration: none;
+    color: #808080;
+}
+ul#menu>li>a {
+    text-decoration: none;
+    color: #808080;
+}
+/* Layout das receitas */
+.receitaschefs {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-rows: minmax(0, auto);
+    gap: 0px;
+    height: 100%;
+    background-size: 100% 100%;
+    margin: 50px 30px 0px 30px;
+    align-items:normal;
+    text-align: center;
+    color:#FF5E00;
+    font-size: 20px;
+}
+/* Quadro de avisos */
+.quadro {
+    border: 1px solid #000;
+    background: linear-gradient(
+        0deg,
+        rgba(249, 238, 231, 0.2) 0%,
+        rgba(249, 238, 231, 0.2) 100%
+      ),
+      #f9eee7;
+    align-self: start;
+    display: flex;
+    margin-top: 65px;
+    width: 880px;
+    height: 183px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    margin-bottom: 15px;
+    list-style:none;
+}
+/* Estilo do texto dentro do quadro */
+#text1{
+    display: flex;
+    justify-content:initial;
+    list-style-type: none;
+    margin-left: 255px;
+    font-size: 20px;
+}
+/* Estilo da lista dentro do quadro */
+ul#text1>li{
+    text-decoration: none;
+    color: #808080;
+    list-style:none;
+    padding: 5px;
+    color:#000000;
+    font-weight: bold;
+}
+/* Estilo do link dentro do quadro */
+ul#text1>li>a {
+    text-decoration: none;
+    list-style: none;
+    color:#FF5E00;
+}
+/* Informações sobre a receita de coxinha */
+.coxinha{
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top:50px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+/* Seção de interações e foto da coxinha */
+.interacoes{
+    display:flex;
+    align-items: center;
+    text-justify: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+.fotocoxinha{
+    display:flex;
+    align-items: center;
+    text-justify: center;
+    justify-content: center;
+}
+/* Tempo de preparo da receita */
+.tempo{
+    border: 2px solid #B2ABAB;
+    padding: 5px;
+    display: flex;
+    margin-top: 20px;
+    width: 880px;
+    margin-left:310px;
+    background: linear-gradient(
+        0deg,
+        rgba(249, 238, 231, 0.2) 0%,
+        rgba(249, 238, 231, 0.2) 100%
+      ),
+      #F2EBE6;
+    font-size:20px;
+    font-weight: bold;
+    justify-content: center;
+}
+/* Nome da criadora da receita */
+.anaju{
+    display: flex;
+    align-items: center;
+    padding-left: 310px;
+    color:#575353;
+    margin-top:20px;
+    font-size: 20px;
+}
+/* Lista de ingredientes */
+.ingredientes{
+    border: 2px solid #B2ABAB;
+    padding: 5px;
+    display: flex;
+    margin-top: 20px;
+    width: 880px;
+    margin-left:310px;
+    background: linear-gradient(
+        0deg,
+        rgba(249, 238, 231, 0.2) 0%,
+        rgba(249, 238, 231, 0.2) 100%
+      ),
+      #F2EBE6;
+    font-size:20px;
+    
+}
+/* Container para o conteúdo da receita */
+.container{
+    display:flex;
+    padding-left: 350px;
+    padding-top:15px;
+    font-size: 20px;
+}
+
+ul.l1>li{
+    text-decoration: none;
+    color: #808080;
+    list-style:none;
+    margin-right:80px;
+    margin-bottom:60px;
+    color:#000;
+    font-size:20px;
+    
+}
+ul.l2>li{
+    text-decoration: none;
+    color: #808080;
+    list-style:none;
+    margin-left:260px;
+    margin-bottom:60px;
+    color:#000;
+    font-size:20px;
+}
+.modopreparo{
+    border: 2px solid #B2ABAB; /* Define uma borda sólida cinza de 2 pixels */
+    padding: 5px;
+    display: flex;
+    margin-top: 20px;
+    width: 880px;
+    margin-left:310px;
+    background: linear-gradient(
+        0deg,
+        rgba(249, 238, 231, 0.2) 0%,
+        rgba(249, 238, 231, 0.2) 100%
+      ),
+      #F2EBE6;
+    font-size:20px;
+    margin-bottom:30px;
+    
+}
+.tempopreparo{
+    display: block;
+    align-items: center;
+    padding-left: 330px;
+    margin-top:20px;
+    font-size:20px;
+}
+/* Lista de passos do modo de preparo */
+ol {
+    list-style: none; 
+    counter-reset: item; 
+    padding-left: 0;
+    font-size: 20px;
+  }
+  /* Estilo dos passos do modo de preparo */
+  ol li {
+    counter-increment: item; 
+    margin-bottom: 20px; 
+    font-size:20px;
+  }
+  /* Números antes de cada passo do modo de preparo */
+  ol li::before {
+    content: counter(item); 
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+    background-color: #FFFFFF; 
+    color: #FF5E00; 
+    text-align:center;
+    line-height: 40px; 
+    margin-right: 10px; 
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+}
+/* Linha horizontal separadora */
+hr {
+    border: 1px solid #575353;
+}
+/* Seção de comentários sobre a receita */
+.coment{
+    border: 2px solid #B2ABAB; /* Define uma borda sólida cinza de 2 pixels */
+    padding: 5px;
+    display: flex;
+    margin-top: 20px;
+    width: 880px;
+    margin-left:310px;
+    background: linear-gradient(
+        0deg,
+        rgba(249, 238, 231, 0.2) 0%,
+        rgba(249, 238, 231, 0.2) 100%
+      ),
+      #F2EBE6;
+    font-size:20px;
+    margin-bottom:30px;
+}
+/* Seção de login e avaliações */
+.login{
+    border: 2px solid #FF5E00; /* Define uma borda sólida cinza de 2 pixels */
+    padding: 5px;
+    display: flex;
+    margin-top: 20px;
+    width: 880px;
+    margin-left:310px;
+    background: #F9EEE7;
+    font-size:20px;
+    margin-bottom:30px;
+    justify-content: center;
+    color:#FF5E00;
+}
+.avaliacoes{
+    display:flex;
+    align-items: start;
+    justify-content: start;
+    margin-left:320px;
+    color:#666666;
+    font-size: 20px;
+}
+/* Tipos de receitas */
+.tipos{
+    float:right;
+    display: inline-flex;
+    align-items: end;
+    margin-left:600px;
+    gap:20px;
+    font-size: 20px;
+    
+}
+/* Estilo de texto dentro da seção de cores */
+#color>p{
+    color:#000;
+}
+/* Linha horizontal com cor específica */
+#color hr{
+    border: 1px solid #FF5E00;
+}
+/* Seção de comentários gerais */
+.comentarios{
+    margin-left:310px;
+    margin-bottom:20px;
+
+}
+/* Rodapé da página */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9EEE7;
+    padding: 30px;
+}
+.rodape{
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #F9EEE7;
+    padding-bottom:30px;
+    text-align: center;
+    align-items: center;
+}
+/* Logotipo no rodapé */
+#logodeliciar{
+    display:inline-flex;
+    padding-left: 320px;
+    padding-top: 20px;
+}
+/* Informações de contato no rodapé */
+#rodape-contato{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+ul#rodape-contato>li{
+    text-decoration: none;
+    color: #808080;
+    list-style:none;
+    padding: 15px;
+}
+ul#rodape-contato>li>a {
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+}

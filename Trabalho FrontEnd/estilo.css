@@ -1,0 +1,309 @@
+/* Estilo geral do corpo da página */
+body{
+    background:white;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* Barra de navegação superior */
+.cor-bd{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9EEE7;
+    padding: 30px;
+}
+/* Campo de busca */
+#divBusca{
+    background-color:rgba(255, 255, 255, 0.60);
+    border:solid 1px;
+    border-radius: 30px;
+    border-color: #FF5E00;
+    width: 550px;
+    height: 42px;
+    float:inline-start;
+    flex-shrink: 10;
+}
+  /* Estilo do texto no campo de busca */
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width: 500px;
+}
+/* Botão de busca */
+#busca{
+    float:inline-start;
+    padding: 10px;
+}
+/* Cabeçalho da página */
+.header-content {
+    height: 60px;
+    flex-shrink: 0;
+    background-color: #F2EBE6;
+    padding: 1rem 0;
+}
+/* Menu de navegação */
+#menu{
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    font-size: 20px;
+}
+ul#menu>li{
+    text-decoration: none;
+    color: #808080;
+}
+ul#menu>li>a {
+    text-decoration: none;
+    color: #808080;
+}
+/* Layout das receitas */
+.receitaschefs {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-rows: minmax(0, auto);
+    gap: 0px;
+    height: 100%;
+    background-size: 100% 100%;
+    margin: 50px 30px 0px 30px;
+    align-items:normal;
+    text-align: center;
+    color:#FF5E00;
+    font-size: 20px;
+}
+/* Layout dos grupos de receitas */
+.receitasgrupo{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    height: 100%;
+    background-size: 100% 100%;
+    margin: 100px;
+    padding: 50;
+    align-items:center;
+    text-align: center;
+    
+}
+
+.receitasgrupo2{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    height: 100%;
+    background-size: 100% 100%;
+    margin: 100px;
+    padding: 0;
+    align-items:center;
+    text-align: center; 
+}
+/* Botão estilizado */
+.button {
+    display: flex;
+    padding: 20px 20px; 
+    background-color: #FF5E00; 
+    color: #fff; 
+    border: none; 
+    border-radius: 50px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px; 
+    cursor: pointer; 
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(255, 94, 0, 0.7);
+    position: relative;
+    top:-20px;
+    
+  }
+.button:hover {
+    background-color: #FF7F00; 
+    text-decoration: none;
+  }
+/* Seção específica para o elemento #pizza */
+#pizza{
+display: flex;
+padding-left:180px;
+padding-top: 80px;
+}
+/* Container geral com layout de grade */
+.container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; ;
+    max-width:1500px;
+    margin:180px;
+    padding-right:30px;
+    text-align: center;
+    margin-top:0px;
+
+}
+/* Estilo para determinados itens dentro do container */
+.container > div:nth-child(n+6){
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+
+}
+/* Estilo para um item específico dentro do container */
+.container > div.torta-limao{
+    grid-column: 1;
+    grid-row: 1 / 4;
+    display: block;
+    padding-bottom:200px;
+    padding-right:50px;
+}
+/* Segundo botão estilizado */
+.button2 {
+    display: flex;
+    padding: 20px 20px; 
+    background-color: #FF5E00;
+    color: #fff; 
+    border: none; 
+    border-radius: 50px; 
+    text-align: normal;
+    text-decoration: none; 
+    font-size: 15px;
+    cursor: pointer; 
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(255, 94, 0, 0.7);
+  }
+.button2:hover {
+    background-color: #FF7F00; 
+    text-decoration: none;
+  }
+  /* Linha horizontal com posição relativa */
+#hr{
+    position:relative;
+    height: 5px;
+}
+/* Título para as últimas receitas */
+#ultreceitas{
+    color:#FF5E00;
+    text-align:center;
+    padding-top:30px;
+}
+/* Grid para as últimas receitas */
+.receitas-ultimas{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    height: 100%;
+    background-size: 100% 100%;
+    margin: 80px;
+    padding: 0px;
+    align-items:center;
+    text-align: center;
+}
+/* Título para receitas populares */
+#receitaspop{
+    color:#FF5E00;
+    text-align:center;
+    padding-top:5px;
+}
+/* Grid para receitas populares */
+#receitas-populares{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    column-count:2;
+}
+/* Posicionamento relativo para #receitaspop */
+#receitaspop{
+    color:#FF5E00;
+    text-align:center;
+    padding-top:5px;
+    position:relative;
+}
+/* Container secundário */
+.container2{
+    display:flex;
+    padding-left: 500px;
+    padding-bottom:50px;
+    padding-top:15px;
+}
+/*estilos das listas*/
+ul.l1>li{
+    text-decoration: none;
+    color: #808080;
+    list-style:none;
+    margin-right:80px;
+}
+ul.l2>li{
+    text-decoration: none;
+    color: #808080;
+    list-style:none;
+    margin-left:80px;
+}
+/* Links dentro das listas */
+ul.l1>li>a {
+    text-decoration: none;
+    list-style:none;
+    color: #333;
+}
+ul.l2>li>a {
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+}
+
+/* Rodapé da página */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9EEE7;
+    padding: 30px;
+}
+.rodape{
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #F9EEE7;
+    padding-bottom:30px;
+    text-align: center;
+    align-items: center;
+}
+/* Logotipo no rodapé */
+#logodeliciar{
+    display:inline-flex;
+    padding-left: 320px;
+    padding-top: 20px;
+}
+/* Informações de contato no rodapé */
+#rodape-contato{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+ul#rodape-contato>li{
+    text-decoration: none;
+    color: #808080;
+    list-style:none;
+    padding: 15px;
+}
+ul#rodape-contato>li>a {
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+}
